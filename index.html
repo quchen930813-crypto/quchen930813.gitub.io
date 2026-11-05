@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f6f2" />
+  <meta name="description" content="你的名字的个人主页 —— 个人简介、作品展示与联系方式。" />
+  <title>Qu Chen· 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#top">Qu Chen<span aria-hidden="true">.</span></a>
+
+      <nav class="nav" id="primary-nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#works">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="打开导航菜单">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>开放合作 · 欢迎交流</p>
+
+          <h1 id="hero-title">
+            你好，我是<br />
+            <span class="hero__name">Qu Chen</span><span class="accent" aria-hidden="true">。</span>
+          </h1>
+
+          <p class="hero__lead">
+            一个充满好奇心，热爱学习与阅读的人
+            我喜欢探索新知识，也希望记录每一次成长与收获。
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#works">查看作品 <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#contact">联系我</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li><span>方向</span>计算机</li>
+            <li><span>坐标</span>中国 · 青岛</li>
+            <li><span>状态</span>在读 </li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal">
+          <figure class="portrait">
+            <img id="avatar" src="images/avatar.jpg" alt="你的名字的头像" width="800" height="1000" />
+            <span class="portrait__fallback" hidden aria-hidden="true">你</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container section__grid">
+        <p class="section__label">01 — 关于我</p>
+
+        <div class="section__body reveal">
+          <h2 id="about-title">把想法，做成可以使用的作品。</h2>
+          <p class="lead">
+            始终充满热爱
+          </p>
+          <p>
+            不追求复杂，先让事情跑起来，再逐步打磨细节。
+          </p>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>学习方向</dt>
+              <dd>计算机</dd>
+            </div>
+            <div class="fact">
+              <dt>工作方向</dt>
+              <dd>暂无</dd>
+            </div>
+            <div class="fact">
+              <dt>近期在做</dt>
+              <dd>一个个人项目</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品 -->
+    <section class="section" id="works" aria-labelledby="works-title">
+      <div class="container section__grid">
+        <p class="section__label">02 — 作品</p>
+
+        <div class="section__body">
+          <div class="section__head reveal">
+            <h2 id="works-title">近期完成的三个作品</h2>
+            <p>学习笔记与摄影记录，点击任意卡片查看详情。</p>
+          </div>
+
+          <div class="works">
+            <button class="work-card reveal" type="button" data-work="notes" aria-haspopup="dialog">
+              <span class="work-card__media media-frame">
+                <img src="images/study-notes.jpg" alt="线性代数学习笔记封面" loading="lazy" />
+              </span>
+              <span class="work-card__body">
+                <span class="work-card__meta">
+                  <span class="work-card__index">01</span>
+                  <span class="work-card__category">学习笔记</span>
+                </span>
+                <span class="work-card__title">线性代数学习笔记</span>
+                <span class="work-card__desc">整理数学知识、公式和解题思路。</span>
+                <span class="work-card__more">查看详情 <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+
+            <button class="work-card reveal" type="button" data-work="nature" aria-haspopup="dialog">
+              <span class="work-card__media media-frame">
+                <img src="images/nature1.jpg" alt="自然与风景封面" loading="lazy" />
+              </span>
+              <span class="work-card__body">
+                <span class="work-card__meta">
+                  <span class="work-card__index">02</span>
+                  <span class="work-card__category">摄影作品</span>
+                </span>
+                <span class="work-card__title">自然与风景</span>
+                <span class="work-card__desc">记录旅途中的风景与自然光影。</span>
+                <span class="work-card__more">查看详情 <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+
+            <button class="work-card reveal" type="button" data-work="daily" aria-haspopup="dialog">
+              <span class="work-card__media media-frame">
+                <img src="images/daily.jpg" alt="日常生活片段封面" loading="lazy" />
+              </span>
+              <span class="work-card__body">
+                <span class="work-card__meta">
+                  <span class="work-card__index">03</span>
+                  <span class="work-card__category">摄影作品</span>
+                </span>
+                <span class="work-card__title">日常生活片段</span>
+                <span class="work-card__desc">收藏日常生活中值得记录的瞬间。</span>
+                <span class="work-card__more">查看详情 <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品详情弹窗 -->
+    <dialog class="work-modal" id="work-dialog" aria-labelledby="work-dialog-title">
+      <button class="work-modal__close" type="button" aria-label="关闭作品详情">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="work-modal__panel">
+        <div class="work-modal__media" id="work-dialog-media"></div>
+        <div class="work-modal__body">
+          <p class="work-modal__meta">
+            <span class="work-modal__index" id="work-dialog-index"></span>
+            <span class="work-modal__category" id="work-dialog-category"></span>
+          </p>
+          <h3 class="work-modal__title" id="work-dialog-title"></h3>
+          <p class="work-modal__desc" id="work-dialog-desc"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- 联系 -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container section__grid">
+        <p class="section__label">03 — 联系</p>
+
+        <div class="section__body reveal">
+          <h2 id="contact-title">有想法，<br />随时聊聊。</h2>
+          <p class="lead">欢迎邮件联系，或者通过下面的社交平台找到我。通常会在 1–2 天内回复。</p>
+
+          <ul class="links">
+            <li>
+              <a href="mailto:3670943294@qq.com">
+                <span class="links__label">邮箱</span>
+                <span class="links__value">3670943294@qq.com</span>
+                <span class="links__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/quchen930813-crypto" target="_blank" rel="noopener noreferrer">
+                <span class="links__label">GitHub</span>
+                <span class="links__value">quchen930813-crypto</span>
+                <span class="links__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://weibo.com" target="_blank" rel="noopener noreferrer">
+                <span class="links__label">微博</span>
+                <span class="links__value">暂不透露</span>
+                <span class="links__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Qu Chen</p>
+      <p>用 HTML · CSS · JavaScript 手写</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
